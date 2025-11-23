@@ -3,13 +3,13 @@ import './App.css'
 
 function FilterManager() {
   const [restaurants, setRestaurants] = useState([]);
-  const [expenses, setExpenses] = useState([]);
+  const [,setExpenses] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
 
   const [restaurant, setRestaurant] = useState("");
   const [location, setLocation] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
-  const [date, setDate] = useState("");
+  const [, setDate] = useState("");
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
 
