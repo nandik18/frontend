@@ -8,14 +8,14 @@ function RestaurantManager() {
   const [showList, setShowList] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/restaurants")
+    fetch("https://backend-kmoh.onrender.com/api/restaurants")
       .then((res) => res.json())
       .then((data) => setRestaurants(data));
   }, []);
 
   const handleAdd = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/api/restaurants", {
+    fetch("https://backend-kmoh.onrender.com/api/restaurants", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, location }),
@@ -29,7 +29,7 @@ function RestaurantManager() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/api/restaurants/${id}`, {
+    fetch(`https://backend-kmoh.onrender.com/api/restaurants/${id}`, {
       method: "DELETE",
     }).then(() => {
       setRestaurants((prev) => prev.filter((r) => r._id !== id));

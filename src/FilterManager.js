@@ -15,7 +15,7 @@ function FilterManager() {
 
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/restaurants")
+    fetch("https://backend-kmoh.onrender.com/api/restaurants")
       .then((res) => res.json())
       .then((data) => setRestaurants(data));
   }, []);
@@ -29,7 +29,7 @@ function FilterManager() {
   }
 
   const handleSearch = () => {
-    fetch("http://localhost:5000/api/expenses")
+    fetch("https://backend-kmoh.onrender.com/api/expenses")
       .then((res) => res.json())
       .then((data) => {
         setExpenses(data);
