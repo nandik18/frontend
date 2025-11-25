@@ -15,7 +15,7 @@ function FilterManager() {
 
 
   useEffect(() => {
-    fetch("https://backend-kmoh.onrender.com/api/restaurants")
+    fetch("https://backend-1-grep.onrender.com/api/restaurants")
       .then((res) => res.json())
       .then((data) => setRestaurants(data));
   }, []);
@@ -29,7 +29,7 @@ function FilterManager() {
   }
 
   const handleSearch = () => {
-    fetch("https://backend-kmoh.onrender.com/api/expenses")
+    fetch("https://backend-1-grep.onrender.com/api/expenses")
       .then((res) => res.json())
       .then((data) => {
         setExpenses(data);

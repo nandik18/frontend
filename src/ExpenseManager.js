@@ -12,11 +12,11 @@ function ExpenseManager() {
   const [showList, setShowList] = useState(false);
 
   useEffect(() => {
-    fetch("https://backend-kmoh.onrender.com/api/expenses")
+    fetch("https://backend-1-grep.onrender.com/api/expenses")
       .then((res) => res.json())
       .then((data) => setExpenses(data));
 
-    fetch("https://backend-kmoh.onrender.com/api/restaurants")
+    fetch("https://backend-1-grep.onrender.com/api/restaurants")
       .then((res) => res.json())
       .then((data) => setRestaurants(data));
   }, []);
@@ -27,7 +27,7 @@ function ExpenseManager() {
       return alert("Please fill all fields");
     }
 
-    fetch("https://backend-kmoh.onrender.com/api/expenses", {
+    fetch("https://backend-1-grep.onrender.com/api/expenses", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ restaurantId, amount, paymentMethod, mode, date }),
@@ -44,7 +44,7 @@ function ExpenseManager() {
   };
 
   const handleDelete = (id) => {
-    fetch(`https://backend-kmoh.onrender.com/api/expenses/${id}`, {
+    fetch(`https://backend-1-grep.onrender.com/api/expenses/${id}`, {
       method: "DELETE",
     }).then(() => {
       setExpenses((prev) => prev.filter((e) => e._id !== id));
