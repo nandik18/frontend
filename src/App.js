@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RestaurantManager from "./RestaurantManager";
+import RestaurantManager from "./RestaurantManager"
 import ExpenseManager from "./ExpenseManager";
 import FilterManager from "./FilterManager";
 // import './App.css'

@@ -15,7 +15,7 @@ function RestaurantManager() {
 
   const handleAdd = (e) => {
     e.preventDefault();
-    fetch("https://backend-kmoh.onrender.com/api/restaurants", {
+    fetch("https://backend-kmoh.onrender.com/api/restaurants/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, location }),
