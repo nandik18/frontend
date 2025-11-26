@@ -2,6 +2,7 @@ import { useState } from "react";
 import RestaurantManager from "./RestaurantManager"
 import ExpenseManager from "./ExpenseManager";
 import FilterManager from "./FilterManager";
+import InstallPrompt from "./InstallPrompt";
 // import './App.css'
 // import './App2.css' 
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div>
+      <InstallPrompt/>
       <h1>Expense Manager</h1>
       <nav>
         <button onClick={() => setHtab("food")}>Food expenses</button>
