@@ -7,12 +7,12 @@
   "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "Expense_logo192.png",
+      "src": "Expense_logo1923.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "Expense_logo.png",
+      "src": "Expense_logo512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
